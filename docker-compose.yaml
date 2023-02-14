@@ -6,7 +6,7 @@ services:
     ports: 
       - 30000:30000
     volumes:
-      - /path/to/your/foundry/data/directory:/data/foundryvtt
-      - /path/to/your/foundry/zip/file:/host
-      - /path/to/your/foundry/app/file:/opt/foundryvtt/resources/app
+      - /docker/foundrty/data:/data/foundryvtt
+      - /docker/foundry/pkg:/host
+      - /docker/foundry/app/resources/app:/opt/foundryvtt/resources/app
     restart: unless-stopped
